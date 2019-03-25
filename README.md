@@ -1,4 +1,3 @@
-
 # Tic Tac Toe
 
 ## Objective
@@ -25,4 +24,4 @@ In order to practice what we have learned regarding OOP and best practices, let'
   Create GUI interface (Shoes or Gosu)
   Create web app 
   Create API
->>>>>>> 8e46b337ff8ae79e57b2444e21e0f2d0e75dfc2b
+
