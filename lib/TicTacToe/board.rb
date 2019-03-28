@@ -5,15 +5,16 @@ module TicTacToe
     class Board
         include Helper
         attr_reader :grid, :size
+        
         def initialize(size)
-        @size = size
-        @grid = Array.new(size) { Array.new(size) }
-        fill_grid
-        print_grid 
+            @size = size
+            @grid = Array.new(size) { Array.new(size) }
+            fill_grid
+            print_grid 
         end
 
         def fill_grid
-            show_message("Loading grid...")
+            log("Loading grid...")
             index = 1
             grid.each_index do |i|
                 sub_array = grid[i]
@@ -33,7 +34,7 @@ module TicTacToe
             end
         end
 
-        def check_cell x,y 
+        def check_cell?(x,y) 
             return true if grid[x][y].include?"X" or grid[x][y].include?"O"
             return false
         end
@@ -44,7 +45,7 @@ module TicTacToe
 
         def set_cell(x,y,value)
             if grid[x][y].include?"X" or grid[x][y].include?"O"
-                show_message("Already taken")
+                log("Already taken")
             else
                 grid[x][y] = value
             end 
