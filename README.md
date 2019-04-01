@@ -8,14 +8,14 @@
 - Once the game finishes, players are asked if they want to play again. If they do, the player who lost the previous match starts. In case of a draw, the player who did the second-to-last movement starts
 
 ##Installation
+Copy the "TicTacToe-0.1.0.gem" file to your proyect and install it yourself as:
+
+$ gem install --local TicTacToe
+
 Add this line to your application's Gemfile:
 
-gem 'TiCTaCToe'
-And then execute:
+require 'TiCTaCToe'
 
-$ bundle
-Or install it yourself as:
 
-$ gem install TicTacToe
 
 
